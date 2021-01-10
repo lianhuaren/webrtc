@@ -96,10 +96,10 @@ std::string ListFlags(int flags) {
   bool first = true;
 // Skip past the first 12 chars (strlen("SCTP_STREAM_"))
 #define MAKEFLAG(X) \
-  { X, #X + 12 }
+  { X, X + 12 }
   struct flaginfo_t {
     int value;
-    const char* name;
+      int name;//const char* name;
   } flaginfo[] = {MAKEFLAG(SCTP_STREAM_RESET_INCOMING_SSN),
                   MAKEFLAG(SCTP_STREAM_RESET_OUTGOING_SSN),
                   MAKEFLAG(SCTP_STREAM_RESET_DENIED),
