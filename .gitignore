@@ -41,9 +41,13 @@
 /base
 /build
 /buildtools
-/ios
+
 /mojo
-/out
+*.o
+*.a
+*.app
+out/a3/obj
+WebRTC.framework
 /testing
 /third_party_chromium
 /tools
